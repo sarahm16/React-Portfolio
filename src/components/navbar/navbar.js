@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import './style.css';
+
 class Navbar extends Component {
 
     render() {
@@ -10,8 +12,8 @@ class Navbar extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
             
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                <div className="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav">
                         <li className={this.props.page === 'aboutme' ? 'nav-link active' : 'nav-link'}>
                             <a className="nav-link" href="/">About Me </a>
                         </li>
