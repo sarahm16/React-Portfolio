@@ -11,6 +11,14 @@ li {
     padding: 20px;
 }
 
+.project-header {
+    display: block;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 5px;
+}
+
 .projects {
     margin: 0px;
 }
