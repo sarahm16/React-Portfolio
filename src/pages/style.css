@@ -13,5 +13,14 @@ li {
 
 .projects {
     margin: 0px;
+}
+
+.project-list {
+    margin-top: 10px;
+}
+
+.project-name {
+    display: block;
     text-align: center;
+    padding: 5px;
 }

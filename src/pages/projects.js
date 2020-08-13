@@ -22,7 +22,7 @@ class Projects extends Component {
                         <div className='col-lg-3 project-list bg-light'>
                             {this.state.projectList.map(project => {
                                 return(
-                                    <div className='row'>
+                                    <div className='row project-name'>
                                         {project.name}
                                     </div>
                                 )

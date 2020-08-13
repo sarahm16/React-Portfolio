@@ -1,10 +1,25 @@
 let projectList = [
     {
-        name: 'fair weather hiking',
-        description: 'testing'
-    }, {
-        name: 'urban forage',
-        description: 'testing'
+        name: 'Fair Weather Hiking',
+        description: 'testing',
+        technologies: []
+    },
+    {
+        name: 'Urban Forage',
+        description: 'testing',
+        technologies: []
+    },
+    {
+        name: 'Festival Friends',
+        description: 'testing',
+        technologies: []
+    },
+    {
+        name: '',
+        description: '',
+        technologies: [],
+        url: '',
+        image: ''
     }
 ]
 
