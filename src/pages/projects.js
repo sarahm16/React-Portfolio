@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Navbar from '../components/navbar/navbar';
+import Project from '../components/project/project';
 import projectList from '../db/db';
 
 import './style.css';
@@ -46,7 +47,9 @@ class Projects extends Component {
                                 )
                             })}
                         </div>
-                        <div className='col-lg-8'></div>
+                        <div className='col-lg-8'>
+                            <Project details={this.state.activeProject}/>
+                        </div>
                     </div>
                 </div>
             </div>
