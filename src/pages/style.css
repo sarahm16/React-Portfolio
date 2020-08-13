@@ -9,5 +9,9 @@ ul {
 li {
     display: inline;
     padding: 20px;
+}
 
+.projects {
+    margin: 0px;
+    text-align: center;
 }

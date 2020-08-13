@@ -1,14 +1,33 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import Navbar from '../components/navbar/navbar';
+import projectList from '../db/db';
 
-function Projects() {
-    return(
-        <div>
-            <Navbar page='projects' />
-            <h2>Projects</h2>
-        </div>
-    )
+import './style.css';
+
+class Projects extends Component {
+    constructor() {
+        super();
+        this.state={
+            projectList: projectList
+        }
+    }
+    render() {
+        console.log(this.state.projectList);
+        return(
+            <div>
+                <Navbar page='projects' />
+                <div className='container projects'>
+                    <div className='row'>
+                        <div className='col-lg-3 project-list bg-light'>
+                            Projects
+                        </div>
+                        <div className='col-lg-9'></div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Projects;

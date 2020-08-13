@@ -6,6 +6,8 @@ import './style.css';
 
 function Contact() {
     return(
+        //make a form to send me email
+        //include input field for their phone and email
         <div>
             <Navbar page='contact' />
             <div className='contact container bg-light'>

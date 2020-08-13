@@ -23,15 +23,15 @@ class Navbar extends Component {
                             <a className="nav-link" href="/projects">Projects</a>
                         </li>                    
                         <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
-                            <a className="nav-link" href="/contact">Contact</a>
+                            <a className="nav-link" href="/contact"><i className="far fa-envelope"></i></a>
                         </li>
 
                         <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
-                            <a className="nav-link" href="https://github.com/sarahm16"><i class="fab fa-github"></i></a>
+                            <a className="nav-link" href="https://github.com/sarahm16"><i className="fab fa-github"></i></a>
                         </li>
 
                         <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
-                            <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/"><i class="fab fa-linkedin"></i></a>
+                            <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/"><i className="fab fa-linkedin"></i></a>
                         </li>
                         
                     </ul>
