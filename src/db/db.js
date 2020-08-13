@@ -15,7 +15,35 @@ let projectList = [
         technologies: []
     },
     {
-        name: '',
+        name: 'FindMyDoctor',
+        description: '',
+        technologies: [],
+        url: '',
+        image: ''
+    },
+    {
+        name: 'Note Taker',
+        description: '',
+        technologies: [],
+        url: '',
+        image: ''
+    },
+    {
+        name: 'MERN Books',
+        description: '',
+        technologies: [],
+        url: '',
+        image: ''
+    },
+    {
+        name: 'Workout Tracker',
+        description: '',
+        technologies: [],
+        url: '',
+        image: ''
+    },
+    {
+        name: 'Weather App',
         description: '',
         technologies: [],
         url: '',
