@@ -15,22 +15,19 @@ class Navbar extends Component {
             
                 <div className="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
-                        <li className={this.props.page === 'aboutme' ? 'nav-link active' : 'nav-link'}>
+                        {/* <li className={this.props.page === 'aboutme' ? 'nav-link active' : 'nav-link'}>
                             <a className="nav-link" href="/">About Me </a>
-                        </li>
-                        <li className={this.props.page === 'projects' ? 'nav-link active' : 'nav-link'}>
-
-                            <a className="nav-link" href="/projects">Projects</a>
-                        </li>                    
+                        </li> */}
+                   
                         <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
                             <a className="nav-link" href="/contact"><i className="far fa-envelope"></i></a>
                         </li>
 
-                        <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
+                        <li className='nav-link'>
                             <a className="nav-link" href="https://github.com/sarahm16"><i className="fab fa-github"></i></a>
                         </li>
 
-                        <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
+                        <li className='nav-link'>
                             <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/"><i className="fab fa-linkedin"></i></a>
                         </li>
                         

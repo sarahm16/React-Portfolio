@@ -12,6 +12,11 @@ class Projects extends Component {
             projectList: projectList
         }
     }
+
+    setActiveProject = () => {
+        console.log('clicked on project')
+    }
+
     render() {
         console.log(this.state.projectList);
         return(
@@ -19,19 +24,19 @@ class Projects extends Component {
                 <Navbar page='projects' />
                 <div className='container projects'>
                     <div className='row'>
-                        <div className='col-lg-3 project-list bg-light'>
+                        <div className='col-lg-4 project-list bg-light'>
                             <div className='row project-header'>
-                                <h3>Projects</h3>
+                                <h4>Projects</h4>
                             </div>
                             {this.state.projectList.map(project => {
                                 return(
                                     <div className='row project-name'>
-                                        {project.name}
+                                        <button className='project-button bg-light' id={project.name} onClick={this.setActiveProject}>{project.name}</button>
                                     </div>
                                 )
                             })}
                         </div>
-                        <div className='col-lg-9'></div>
+                        <div className='col-lg-8'></div>
                     </div>
                 </div>
             </div>
