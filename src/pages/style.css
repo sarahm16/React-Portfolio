@@ -1,15 +1,35 @@
 .contact {
     margin-top: 10px;
+    width: 60%;
 }
 
-ul {
+form {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
     text-align: center;
 }
 
-li {
-    display: inline;
-    padding: 20px;
+.user-contact {
+    width: 80%;
+    margin: 0 auto;
 }
+
+#message {
+    width: 75%;
+    margin-top: 10px;
+}
+
+.contact-header {
+    display: block;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 5px;    
+}
+
+/* #message {
+    width: 60%;
+} */
 
 .project-header {
     display: block;
