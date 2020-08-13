@@ -5,7 +5,7 @@ import Navbar from '../components/navbar/navbar';
 function Aboutme() {
     return(
         <div>
-            <Navbar />
+            <Navbar page='aboutme' />
             <h2>About me</h2>
         </div>
        

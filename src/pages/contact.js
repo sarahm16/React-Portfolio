@@ -5,7 +5,7 @@ import Navbar from '../components/navbar/navbar';
 function Contact() {
     return(
         <div>
-            <Navbar />
+            <Navbar page='contact' />
             <h2>Contact</h2>
 
         </div>
