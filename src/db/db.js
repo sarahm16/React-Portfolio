@@ -1,12 +1,11 @@
-let projectList = {
-    'Fairweather Hiking': {
+let projectList = [
+    {
         name: 'fair weather hiking',
         description: 'testing'
-    },
-    'Urban Forage': {
+    }, {
         name: 'urban forage',
         description: 'testing'
     }
-}
+]
 
 export default projectList;
