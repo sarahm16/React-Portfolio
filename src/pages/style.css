@@ -51,6 +51,8 @@ form {
     background-color: rgb(65, 65, 65);
     color: white;
     padding: 5px;
+    border-bottom: 2px solid rgb(255, 134, 154);    
+
 }
 
 .projects {
