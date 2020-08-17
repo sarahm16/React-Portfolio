@@ -37,7 +37,8 @@ form {
     text-align: center;
     background-color: rgb(65, 65, 65);
     color: white;
-    padding: 5px;    
+    padding: 5px;
+    border-bottom: 2px solid rgb(255, 134, 154);    
 }
 
 /* #message {
