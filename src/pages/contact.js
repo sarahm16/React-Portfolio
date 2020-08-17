@@ -21,6 +21,13 @@ class Contact extends Component {
         this.setState({[event.target.id] : event.target.value})
     }
 
+    onSubmit = (event) => {
+        event.preventDefault();
+        this.setState({isSubmitted: true});
+        console.log(this.state);
+        console.log('submitted form')
+    }
+
     render() {
         return(
             //make a form to send me email
@@ -32,7 +39,7 @@ class Contact extends Component {
                         <h3>Contact Me</h3>
                     </div>
                     <div className='row'>
-                        <form>
+                        <form onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">
                                     <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} />
@@ -47,6 +54,12 @@ class Contact extends Component {
                                 </div>
                             </div>
                             <textarea id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
+                            <div className='row user-contact'>
+                                <div className='col-lg-10'></div>
+                                <div className='col-lg-2'>
+                                    <button type='submit' id='submit'><i className="far fa-paper-plane"></i></button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
