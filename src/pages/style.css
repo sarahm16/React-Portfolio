@@ -14,9 +14,14 @@ form {
     margin: 0 auto;
 }
 
+#email {
+    margin-top: 10px;
+}
+
 #message {
     width: 75%;
     margin-top: 10px;
+    padding: 5px;
 }
 
 .contact-header {

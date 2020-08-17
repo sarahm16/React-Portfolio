@@ -9,6 +9,7 @@ class Contact extends Component {
         super();
         this.state = {
             message: '',
+            name: '',
             email: '',
             phone: '',
             isSubmitted: false
@@ -34,13 +35,18 @@ class Contact extends Component {
                         <form>
                             <div className="row user-contact">
                                 <div className="col">
-                                    <input type="text" className="form-control" placeholder="Name" />
+                                    <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} />
                                 </div>
                                 <div className="col">
-                                    <input type="text" className="form-control" placeholder="Phone" />
+                                    <input type="text" id='phone' className="form-control" placeholder="Phone" onChange={this.onChange} />
                                 </div>
                             </div>
-                            <textarea id='message' value={this.state.message} onChange={this.onChange} />
+                            <div className='row user-contact'>
+                                <div className='col'>
+                                    <input type='email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} />
+                                </div>
+                            </div>
+                            <textarea id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
                         </form>
                     </div>
                 </div>
