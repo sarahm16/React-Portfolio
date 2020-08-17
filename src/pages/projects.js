@@ -36,7 +36,7 @@ class Projects extends Component {
                 <div className='container projects'>
                     <div className='row'>
                         <div className='col-lg-4 project-list bg-light'>
-                            <div className='row project-header'>
+                            <div className='row project-header bg-secondary'>
                                 <h4>Projects</h4>
                             </div>
                             {this.state.projectList.map((project, index) => {

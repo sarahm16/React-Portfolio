@@ -35,20 +35,16 @@ form {
 .contact-header {
     display: block;
     text-align: center;
-    background-color: rgb(65, 65, 65);
+    /* background-color: rgb(65, 65, 65); */
     color: white;
     padding: 5px;
     border-bottom: 2px solid rgb(255, 134, 154);    
 }
 
-/* #message {
-    width: 60%;
-} */
-
 .project-header {
     display: block;
     text-align: center;
-    background-color: rgb(65, 65, 65);
+    /* background-color: rgb(65, 65, 65); */
     color: white;
     padding: 5px;
     border-bottom: 2px solid rgb(255, 134, 154);    

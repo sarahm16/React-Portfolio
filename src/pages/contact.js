@@ -35,7 +35,7 @@ class Contact extends Component {
             <div>
                 <Navbar page='contact' />
                 <div className='contact container bg-light'>
-                    <div className='row contact-header'>
+                    <div className='row bg-secondary contact-header'>
                         <h3>Contact Me</h3>
                     </div>
                     <div className='row'>
