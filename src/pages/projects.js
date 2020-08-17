@@ -42,7 +42,8 @@ class Projects extends Component {
                             {this.state.projectList.map((project, index) => {
                                 return(
                                     <div className='row project-name'>
-                                        <button className='project-button bg-light' id={index} onClick={this.setActiveProject}>{project.name}</button>
+                                        
+                                        <button className={this.state.activeProject.name === project.name ? 'project-button bg-light active-project' : 'project-button bg-light'} id={index} onClick={this.setActiveProject}>{project.name}</button>
                                     </div>
                                 )
                             })}
