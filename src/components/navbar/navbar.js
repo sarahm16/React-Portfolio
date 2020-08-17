@@ -34,6 +34,10 @@ class Navbar extends Component {
                         <li className='nav-link'>
                             <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/"><i className="fab fa-linkedin inactive-page"></i></a>
                         </li>
+
+                        <li className='nav-link'>
+                            <a className="nav-link" href="https://docs.google.com/document/d/191JCpGsY_NVzEbBzjS--NwL3gXrwIbxQJBIUa-oQ6IU/edit?usp=sharing"><i className="far fa-file inactive-page"></i></a>
+                        </li>
                         
                     </ul>
                 </div>
