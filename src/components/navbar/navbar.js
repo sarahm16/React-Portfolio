@@ -19,12 +19,12 @@ class Navbar extends Component {
                             <a className="nav-link" href="/">About Me </a>
                         </li> */}
 
-                        <li className={this.props.page === 'projects' ? 'nav-link active' : 'nav-link'}>
-                            <a className="nav-link" href="/"><i className="fas fa-code"></i></a>
+                        <li className='nav-link'>
+                            <a className="nav-link" href="/"><i className={this.props.page === 'projects' ? "fas fa-code active-page" : 'fas fa-code'}></i></a>
                         </li>
                    
-                        <li className={this.props.page === 'contact' ? 'nav-link active' : 'nav-link'}>
-                            <a className="nav-link" href="/contact"><i className="far fa-envelope"></i></a>
+                        <li className='nav-link'>
+                            <a className="nav-link" href="/contact"><i className={this.props.page === 'contact' ? "far fa-envelope active-page": 'far fa-envelope'}></i></a>
                         </li>
 
                         <li className='nav-link'>
