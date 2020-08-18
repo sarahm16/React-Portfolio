@@ -34,6 +34,7 @@ class Contact extends Component {
             //include input field for their phone and email
             <div>
                 <Navbar page='contact' />
+                <div className='bg'></div>
                 <div className='contact container bg-light'>
                     <div className='row bg-secondary contact-header'>
                         <h3>Contact Me</h3>
