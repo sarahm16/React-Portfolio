@@ -16,22 +16,14 @@ class Projects extends Component {
         }
     }
 
-    // componentDidMount() {
-    //     this.setState({
-    //         activeProject: this.state.projectList[0]
-    //     })
-    // }
-
     setActiveProject = (event) => {
-        console.log('clicked on project')
+        //set active project to project that user clicks on
         this.setState({
             activeProject: this.state.projectList[event.target.id]
         })
-        console.log(this.state.activeProject);
     }
 
     render() {
-        console.log(this.state.activeProject);
         return(
             <div>
                 <Navbar page='projects' />
