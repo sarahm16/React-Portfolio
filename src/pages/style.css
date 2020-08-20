@@ -43,6 +43,11 @@ form {
     border-radius: 3px;
 }
 
+#success-alert {
+    margin: 10px 20px 10px 20px
+
+}
+
 .contact-header {
     display: block;
     text-align: center;

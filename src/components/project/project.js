@@ -9,7 +9,7 @@ class Project extends Component {
     render() {
         const { name, description, technologies, url, image } = this.props.details;
 
-        let src = images(`./${image}.png`);
+        let src = images(`./${image[0]}.png`);
 
         return(
             <div className='container'>
