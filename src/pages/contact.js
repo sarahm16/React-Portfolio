@@ -43,15 +43,15 @@ class Contact extends Component {
                         <form action='mailto:sarahmarie.carter@yahoo.com' onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">
-                                    <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} />
+                                    <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} required />
                                 </div>
                                 <div className="col">
-                                    <input type="text" id='phone' className="form-control" placeholder="Phone" onChange={this.onChange} />
+                                    <input type="text" id='phone' className="form-control" placeholder="Phone" onChange={this.onChange} required />
                                 </div>
                             </div>
                             <div className='row user-contact'>
                                 <div className='col'>
-                                    <input type='email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} />
+                                    <input type='email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} required />
                                 </div>
                             </div>
                             <textarea id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
