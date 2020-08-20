@@ -12,15 +12,15 @@ class Projects extends Component {
         super();
         this.state={
             projectList: projectList,
-            activeProject: ''
+            activeProject: projectList[0]
         }
     }
 
-    componentDidMount() {
-        this.setState({
-            activeProject: this.state.projectList[0]
-        })
-    }
+    // componentDidMount() {
+    //     this.setState({
+    //         activeProject: this.state.projectList[0]
+    //     })
+    // }
 
     setActiveProject = (event) => {
         console.log('clicked on project')
@@ -31,6 +31,7 @@ class Projects extends Component {
     }
 
     render() {
+        console.log(this.state.activeProject);
         return(
             <div>
                 <Navbar page='projects' />

@@ -12,17 +12,22 @@ class Project extends Component {
         }
     }
 
-    componentDidMount() {
-        let src = images('./fairweather.png');
-        this.setState({
-            src: src
-        })
-    }
+    // componentDidMount() {
+    //     //console.log(this.props.details);
+    //     let image = this.props.details.image;
+    //     this.setState({
+    //         src: image
+    //     })
+    //     // let src = images('./fairweather.png');
+    //     // this.setState({
+    //     //     src: src
+    //     // })
+    // }
 
     render() {
-        console.log('images: ' + images);
-        //console.log(this.props.details)
         const { name, description, technologies, url, image } = this.props.details;
+        console.log(image);
+        let src = images(`./${image}.png`);
         //console.log(typeof image);
         //console.log(image);
         return(
@@ -31,7 +36,7 @@ class Project extends Component {
                     <h2>{name}</h2>
                 </div>
                 <div className='row'>
-                    <div className='col'><img src={this.state.src} alt={name}></img></div>
+                    <div className='col'><img src={src} alt={name}></img></div>
                 </div>
                 <div className='row description bg-light'>
                     {description}
