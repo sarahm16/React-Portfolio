@@ -15,17 +15,17 @@ let projectList = [
     },
     {
         name: 'Festival Friends',
-        description: 'testing',
-        technologies: [],
+        description: 'A mobile app designed for festival goers to organize the contacts they make at a festival. Users can upload photos of new contacts and search for a specific contact either by name or the festival where they met.',
+        technologies: ['IndexedDB (Dexie wrapper)', 'React.js', 'Node.js', 'Express.js', 'Cloudinary.js', 'Bootstrap CSS'],
         url: 'https://serene-gorge-58157.herokuapp.com/',
         image: ['festivalfriends', 'festivalfriends2']
     },
     {
         name: 'FindMyDoctor',
-        description: '',
+        description: 'An app designed for users who are seeking medical care. Users can search for a provider by location and specialty. Search results include a map of each providers location. Users can save a provider to their favorites.',
         technologies: [],
-        url: '',
-        image: ['urban-forage']
+        url: 'https://sarahm16.github.io/FindMyDoctor/',
+        image: ['findmydoctor', 'findmydoctor2']
     },
     {
         name: 'Note Taker',
