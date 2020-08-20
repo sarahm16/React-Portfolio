@@ -4,7 +4,7 @@ let projectList = [
         description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, and track their month by month stats for elevation gain and distance hiked.',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js'],
         url: 'fairweatherhiking.herokuapp.com',
-        image: 'fairweather'
+        image: 'fairweather2'
     },
     {
         name: 'Urban Forage',
