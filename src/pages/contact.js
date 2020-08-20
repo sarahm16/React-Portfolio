@@ -40,7 +40,7 @@ class Contact extends Component {
                         <h3>Contact Me</h3>
                     </div>
                     <div className='row'>
-                        <form onSubmit={this.onSubmit}>
+                        <form action='mailto:sarahmarie.carter@yahoo.com' onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">
                                     <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} />
