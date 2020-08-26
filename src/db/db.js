@@ -1,7 +1,7 @@
 let projectList = [
     {
         name: 'Fair Weather Hiking',
-        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
+        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, upload photos and trip report, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js'],
         url: 'https://fairweatherhiking.herokuapp.com',
         image: ['fairweather', 'fairweather3', 'fairweather4', 'fairweather5', 'fairweather6'],
@@ -14,6 +14,14 @@ let projectList = [
         url: 'https://serene-gorge-58157.herokuapp.com/',
         image: ['festivalfriends', 'festivalfriends2', 'festivalfriends3'],
         imageWidth: '50%'
+    },
+    {
+        name: 'MERN Books',
+        description: 'A React app designed for users who want to search for books and save for later. Users can view the book on Google from the search results or saved books.',
+        technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
+        url: 'https://polar-lake-57125.herokuapp.com/',
+        image: ['mernbooks', 'mernbooks2'],
+        imageWidth: '100%'
     },
     {
         name: 'Urban Forage',
@@ -36,14 +44,6 @@ let projectList = [
         description: 'An app designed for users to take notes, save notes, and delete notes.',
         technologies: ['Express.js', 'Node.js', 'JQuery', 'Bootstrap CSS'],
         url: 'https://sarahm16.github.io/note-taker/',
-        image: ['urban-forage'],
-        imageWidth: '100%'
-    },
-    {
-        name: 'MERN Books',
-        description: '',
-        technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
-        url: '',
         image: ['urban-forage'],
         imageWidth: '100%'
     },
