@@ -37,9 +37,19 @@ class Project extends Component {
                     <h2>{name}</h2>
                 </div>
                 <div className='row'>
-                    <div className='col'><img src={src} alt={name}></img>
-                        <button onClick={this.prevImage}>Previous Image</button>
-                        <button onClick={this.nextImage}>Next image</button>
+                    <div className='col'>
+                        <div className='row'>
+                            <div className='col-lg-1 my-auto'>
+                                <button id='next' onClick={this.prevImage}><i className="fas fa-chevron-left"></i></button>
+                            </div>
+                            <div className='col-lg-10'>
+                                <img src={src} alt={name}></img>
+                            </div>
+                            <div className='col-lg-1 my-auto'>
+                                <button id='previous' onClick={this.nextImage}><i className="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className='row description'>

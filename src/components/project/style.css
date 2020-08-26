@@ -13,3 +13,8 @@ img {
     /* background-color: gray; */
     color: white;
 }
+
+#next,
+#previous {
+    background-color: transparent;
+}
