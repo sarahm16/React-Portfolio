@@ -19,6 +19,13 @@ class Project extends Component {
         }
     }
 
+    prevImage = () => {
+        let prevImage = this.state.currentImage - 1;
+        if(prevImage >= 0) {
+            this.setState({currentImage: prevImage})
+        }
+    }
+
     render() {
         const { name, description, technologies, url, image } = this.props.details;
 
@@ -31,6 +38,7 @@ class Project extends Component {
                 </div>
                 <div className='row'>
                     <div className='col'><img src={src} alt={name}></img>
+                        <button onClick={this.prevImage}>Previous Image</button>
                         <button onClick={this.nextImage}>Next image</button>
                     </div>
                 </div>
