@@ -55,7 +55,9 @@ class Project extends Component {
                 <div className='row description'>
                     {description}
                 </div>
-
+                <div className='link'>
+                    <a href={url}>{url}</a>
+                </div>
             </div>
         )
     }

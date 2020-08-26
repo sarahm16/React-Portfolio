@@ -23,3 +23,8 @@ img {
 #previous {
     background-color: transparent;
 }
+
+.link {
+    text-align: center;
+    margin-bottom: 30px;
+}

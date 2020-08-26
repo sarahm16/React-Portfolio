@@ -3,9 +3,17 @@ let projectList = [
         name: 'Fair Weather Hiking',
         description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js'],
-        url: 'fairweatherhiking.herokuapp.com',
+        url: 'https://fairweatherhiking.herokuapp.com',
         image: ['fairweather', 'fairweather3', 'fairweather4', 'fairweather5', 'fairweather6'],
         imageWidth: '100%'
+    },
+    {
+        name: 'Festival Friends',
+        description: 'A mobile app designed for festival goers to organize the contacts they make at a festival. Users can upload photos of new contacts and search for a specific contact either by name or the festival where they met.',
+        technologies: ['IndexedDB (Dexie wrapper)', 'React.js', 'Node.js', 'Express.js', 'Cloudinary.js', 'Bootstrap CSS'],
+        url: 'https://serene-gorge-58157.herokuapp.com/',
+        image: ['festivalfriends', 'festivalfriends2', 'festivalfriends3'],
+        imageWidth: '50%'
     },
     {
         name: 'Urban Forage',
@@ -14,14 +22,6 @@ let projectList = [
         url: 'https://polar-cliffs-12845.herokuapp.com/',
         image: ['urban-forage'],
         imageWidth: '100%'
-    },
-    {
-        name: 'Festival Friends',
-        description: 'A mobile app designed for festival goers to organize the contacts they make at a festival. Users can upload photos of new contacts and search for a specific contact either by name or the festival where they met.',
-        technologies: ['IndexedDB (Dexie wrapper)', 'React.js', 'Node.js', 'Express.js', 'Cloudinary.js', 'Bootstrap CSS'],
-        url: 'https://serene-gorge-58157.herokuapp.com/',
-        image: ['festivalfriends', 'festivalfriends2'],
-        imageWidth: '50%'
     },
     {
         name: 'FindMyDoctor',
@@ -50,7 +50,7 @@ let projectList = [
     {
         name: 'Workout Tracker',
         description: '',
-        technologies: [],
+        technologies: ['Moment.js'],
         url: '',
         image: ['urban-forage'],
         imageWidth: '100%'
