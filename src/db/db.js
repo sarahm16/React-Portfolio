@@ -1,7 +1,7 @@
 let projectList = [
     {
         name: 'Fair Weather Hiking',
-        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, and track their month by month stats for elevation gain and distance hiked.',
+        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js'],
         url: 'fairweatherhiking.herokuapp.com',
         image: ['fairweather2']
@@ -23,21 +23,21 @@ let projectList = [
     {
         name: 'FindMyDoctor',
         description: 'An app designed for users who are seeking medical care. Users can search for a provider by location and specialty. Search results include a map of each providers location. Users can save a provider to their favorites.',
-        technologies: [],
+        technologies: ['Materialize CSS', 'Better Doctor API', 'locationIQ API', 'GoogleMaps API'],
         url: 'https://sarahm16.github.io/FindMyDoctor/',
         image: ['findmydoctor', 'findmydoctor2']
     },
     {
         name: 'Note Taker',
-        description: '',
-        technologies: [],
-        url: '',
+        description: 'An app designed for users to take notes, save notes, and delete notes.',
+        technologies: ['Express.js', 'Node.js', 'JQuery', 'Bootstrap CSS'],
+        url: 'https://sarahm16.github.io/note-taker/',
         image: ['urban-forage']
     },
     {
         name: 'MERN Books',
         description: '',
-        technologies: [],
+        technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
         url: '',
         image: ['urban-forage']
     },
