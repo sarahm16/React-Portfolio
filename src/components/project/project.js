@@ -13,9 +13,10 @@ class Project extends Component {
     }
 
     nextImage = () => {
-        console.log('next image!');
         let nextImage = this.state.currentImage + 1;
-        this.setState({currentImage: nextImage})
+        if(nextImage < this.props.details.image.length) {
+            this.setState({currentImage: nextImage});
+        }
     }
 
     render() {
