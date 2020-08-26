@@ -1,9 +1,13 @@
-img {
+/* img {
     width: 100%;
+} */
+
+img {
+    display: block;
 }
 
 .description {
-    padding: 10px;
+    padding: 15px;
     margin: 20px 5px 20px 5px;
     background-color: rgba(233, 233, 233, 0.61)
 }
@@ -12,6 +16,7 @@ img {
     padding: 10px 0px 10px 0px;
     /* background-color: gray; */
     color: white;
+    margin-bottom: 5px;
 }
 
 #next,

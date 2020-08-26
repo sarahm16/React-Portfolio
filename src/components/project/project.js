@@ -27,7 +27,7 @@ class Project extends Component {
     }
 
     render() {
-        const { name, description, technologies, url, image } = this.props.details;
+        const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
         let src = images(`./${image[this.state.currentImage]}.png`);
 
@@ -43,7 +43,7 @@ class Project extends Component {
                                 <button id='next' onClick={this.prevImage}><i className="fas fa-chevron-left"></i></button>
                             </div>
                             <div className='col-lg-10'>
-                                <img src={src} alt={name}></img>
+                                <img src={src} alt={name} style={{width: imageWidth}} className='mx-auto'></img>
                             </div>
                             <div className='col-lg-1 my-auto'>
                                 <button id='previous' onClick={this.nextImage}><i className="fas fa-chevron-right"></i></button>
