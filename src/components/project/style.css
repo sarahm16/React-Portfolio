@@ -4,5 +4,12 @@ img {
 
 .description {
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px 5px 20px 5px;
+    background-color: rgba(214, 214, 214, 0.61)
+}
+
+.title {
+    padding: 10px 0px 10px 0px;
+    /* background-color: gray; */
+    color: white;
 }

@@ -5,21 +5,35 @@ import './style.css';
 const images = require.context('../../../public/images', true);
 
 class Project extends Component {
+    constructor() {
+        super();
+        this.state={
+            currentImage: 0
+        }
+    }
+
+    nextImage = () => {
+        console.log('next image!');
+        let nextImage = this.state.currentImage + 1;
+        this.setState({currentImage: nextImage})
+    }
 
     render() {
         const { name, description, technologies, url, image } = this.props.details;
 
-        let src = images(`./${image[0]}.png`);
+        let src = images(`./${image[this.state.currentImage]}.png`);
 
         return(
             <div className='container'>
-                <div className='row'>
+                <div className='justify-content-center row title bg-secondary'>
                     <h2>{name}</h2>
                 </div>
                 <div className='row'>
-                    <div className='col'><img src={src} alt={name}></img></div>
+                    <div className='col'><img src={src} alt={name}></img>
+                        <button onClick={this.nextImage}>Next image</button>
+                    </div>
                 </div>
-                <div className='row description bg-light'>
+                <div className='row description'>
                     {description}
                 </div>
 

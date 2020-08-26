@@ -74,11 +74,14 @@ form {
     display: block;
     text-align: center;
     padding: 5px;
+    
 }
 
 .project-container {
     background-color: white;
     border-left: 20px solid rgba(255, 206, 214, 0.774);
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .active-project {
