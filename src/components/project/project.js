@@ -34,7 +34,7 @@ class Project extends Component {
         return(
             <div className='container'>
                 <div className='justify-content-center row title bg-secondary'>
-                    <h2>{name}</h2>
+                    <h3>{name}</h3>
                 </div>
                 <div className='row'>
                     <div className='col'>
