@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+// import {Link} from 'react-router-dom';
 
 import './style.css';
 
@@ -56,6 +57,7 @@ class Project extends Component {
                     {description}
                 </div>
                 <div className='link'>
+                    {/* <Link to={url}>{url}</Link> */}
                     <a href={url}>{url}</a>
                 </div>
             </div>
