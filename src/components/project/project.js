@@ -58,7 +58,7 @@ class Project extends Component {
                 </div>
                 <div className='link'>
                     {/* <Link to={url}>{url}</Link> */}
-                    <a href={url}>{url}</a>
+                    <a href={url} target='blank'>{url}</a>
                 </div>
             </div>
         )

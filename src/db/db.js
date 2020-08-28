@@ -43,7 +43,7 @@ let projectList = [
         name: 'Note Taker',
         description: 'An app designed for users to take notes, save notes, and delete notes.',
         technologies: ['Express.js', 'Node.js', 'JQuery', 'Bootstrap CSS'],
-        url: 'https://sarahm16.github.io/note-taker/',
+        url: 'https://pure-gorge-92305.herokuapp.com/',
         image: ['urban-forage'],
         imageWidth: '100%'
     },
