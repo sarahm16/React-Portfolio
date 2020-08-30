@@ -49,10 +49,10 @@ let projectList = [
     },
     {
         name: 'Workout Tracker',
-        description: '',
-        technologies: ['Moment.js'],
-        url: '',
-        image: ['urban-forage'],
+        description: 'An app designed for physically active users to track their workouts. User can manually enter cardio or resistance exercises to their workout for the day. The app keeps track of the users stats including total duration of exercises and total weight lifted by day. Stats are given in both pie chart and graph represenation.',
+        technologies: ['Node.js', 'MongoDB', 'Mongoose', 'Express.js', 'Moment.js', 'Chart.js'],
+        url: 'https://gentle-coast-21252.herokuapp.com/?id=5ea25249738c7e0017746e38',
+        image: ['workout', 'workout2', 'workout3'],
         imageWidth: '100%'
     },
     {
