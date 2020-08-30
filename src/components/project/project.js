@@ -45,6 +45,15 @@ class Project extends Component {
                             </div>
                             <div className='col-lg-10'>
                                 <img src={src} alt={name} style={{width: imageWidth}} className='mx-auto'></img>
+                                <div className='carousel'>
+                                    {image.map((image, index) => {
+                                        return(<i 
+                                            // className="far fa-circle icon-xs" 
+                                            className=
+                                                {index === this.state.currentImage ? 'fas fa-circle active-icon' : 'far fa-circle'}
+                                            ></i>)
+                                    })}
+                                </div>
                             </div>
                             <div className='col-lg-1 my-auto'>
                                 <button id='previous' onClick={this.nextImage}><i className="fas fa-chevron-right"></i></button>

@@ -2,7 +2,7 @@ let projectList = [
     {
         name: 'Fair Weather Hiking',
         description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, upload photos and trip report, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
-        technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js'],
+        technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js', 'Chart.js'],
         url: 'https://fairweatherhiking.herokuapp.com',
         image: ['fairweather', 'fairweather3', 'fairweather4', 'fairweather5', 'fairweather6'],
         imageWidth: '100%'

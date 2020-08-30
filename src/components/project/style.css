@@ -6,6 +6,19 @@ img {
     display: block;
 }
 
+.carousel {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.active-icon {
+    color: rgb(255, 134, 154)
+}
+
+.carousel i {
+    margin: 0px 3px 0px 3px;
+}
+
 .description {
     padding: 15px;
     margin: 20px 5px 20px 5px;

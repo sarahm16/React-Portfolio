@@ -31,15 +31,15 @@ class Navbar extends Component {
                                     </li>
 
                                     <li className='nav-link'>
-                                        <a className="nav-link" href="https://github.com/sarahm16"><i className="fab fa-github inactive-page"></i></a>
+                                        <a className="nav-link" href="https://github.com/sarahm16" target='blank'><i className="fab fa-github inactive-page"></i></a>
                                     </li>
 
                                     <li className='nav-link'>
-                                        <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/"><i className="fab fa-linkedin inactive-page"></i></a>
+                                        <a className="nav-link" href="https://www.linkedin.com/in/sarah-carter-24423b1a1/" target='blank'><i className="fab fa-linkedin inactive-page"></i></a>
                                     </li>
 
                                     <li className='nav-link'>
-                                        <a className="nav-link" href="https://docs.google.com/document/d/191JCpGsY_NVzEbBzjS--NwL3gXrwIbxQJBIUa-oQ6IU/edit?usp=sharing"><i className="far fa-file inactive-page"></i></a>
+                                        <a className="nav-link" href="https://docs.google.com/document/d/191JCpGsY_NVzEbBzjS--NwL3gXrwIbxQJBIUa-oQ6IU/edit?usp=sharing" target='blank'><i className="far fa-file inactive-page"></i></a>
                                     </li>
                                 </ul>
                             </div>

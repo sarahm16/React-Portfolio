@@ -42,7 +42,6 @@ class Projects extends Component {
                                 )
                             })}
                         </div>
-                        {/* <div className='col-lg-1'></div> */}
                         <div className='col-lg-8 project-container'>
                             <Project details={this.state.activeProject}/>
                         </div>
