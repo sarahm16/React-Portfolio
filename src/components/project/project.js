@@ -6,8 +6,8 @@ import './style.css';
 const images = require.context('../../../public/images', true);
 
 class Project extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state={
             currentImage: 0
         }
@@ -30,8 +30,9 @@ class Project extends Component {
     render() {
         const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
+        // let src = this.props.newProject ? images(`./${image[0]}.png`) : images(`./${image[this.state.currentImage]}.png`);
         let src = images(`./${image[this.state.currentImage]}.png`);
-
+        
         return(
             <div className='container'>
                 <div className='justify-content-center row title bg-secondary'>
@@ -47,11 +48,9 @@ class Project extends Component {
                                 <img src={src} alt={name} style={{width: imageWidth}} className='mx-auto'></img>
                                 <div className='carousel'>
                                     {image.map((image, index) => {
-                                        return(<i 
-                                            // className="far fa-circle icon-xs" 
-                                            className=
-                                                {index === this.state.currentImage ? 'fas fa-circle active-icon' : 'far fa-circle'}
-                                            ></i>)
+                                        return(
+                                            <i className={index === this.state.currentImage ? 'fas fa-circle active-icon' : 'far fa-circle'}></i>
+                                        )
                                     })}
                                 </div>
                             </div>

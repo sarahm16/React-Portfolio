@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 
 import Navbar from '../components/navbar/navbar';
 import Project from '../components/project/project';
@@ -12,15 +12,32 @@ class Projects extends Component {
         super();
         this.state={
             projectList: projectList,
-            activeProject: projectList[0]
+            activeProject: projectList[0],
+            newProject: false,
+            projectKey: 1
         }
     }
 
+    // componentDidMount() {
+    //     const [projectKey, setProjectKey] = useState(1);
+    //     const refreshProject = () => setProjectKey(projectKey + 1)
+    // }
+
     setActiveProject = (event) => {
+        let newProjectKey = this.state.projectKey + 1
         //set active project to project that user clicks on
         this.setState({
-            activeProject: this.state.projectList[event.target.id]
+            activeProject: this.state.projectList[event.target.id],
+            projectKey: newProjectKey
         })
+
+        // this.setState(prevState => {
+        //     return {
+        //         activeProject: prevState.projectList[event.target.id],
+        //         projectKey: prevState.projectKey + 1
+        //     }
+        // })
+        console.log(this.state.projectKey)
     }
 
     render() {
@@ -43,7 +60,7 @@ class Projects extends Component {
                             })}
                         </div>
                         <div className='col-lg-8 project-container'>
-                            <Project details={this.state.activeProject}/>
+                            <Project details={this.state.activeProject} key={this.state.projectKey} />
                         </div>
                     </div>
                 </div>
