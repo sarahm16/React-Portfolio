@@ -15,6 +15,10 @@ img {
     color: rgb(255, 134, 154)
 }
 
+.inactive-icon {
+    color: rgba(233, 233, 233, 0.61);
+}
+
 .carousel i {
     margin: 0px 3px 0px 3px;
 }

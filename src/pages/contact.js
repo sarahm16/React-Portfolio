@@ -40,6 +40,10 @@ class Contact extends Component {
                         <h3>Contact Me</h3>
                     </div>
                     <div className='row'>
+                        <div className='row my-details'>
+                            <div className='col my-email'>sarahmarie.carter@yahoo.com</div>
+                            <div className='col my-phone'>(253) 245-8544</div>
+                        </div>
                         <form action='mailto:sarahmarie.carter@yahoo.com' onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">

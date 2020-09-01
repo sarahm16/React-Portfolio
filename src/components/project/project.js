@@ -32,7 +32,7 @@ class Project extends Component {
 
         // let src = this.props.newProject ? images(`./${image[0]}.png`) : images(`./${image[this.state.currentImage]}.png`);
         let src = images(`./${image[this.state.currentImage]}.png`);
-        
+
         return(
             <div className='container'>
                 <div className='justify-content-center row title bg-secondary'>
@@ -49,7 +49,7 @@ class Project extends Component {
                                 <div className='carousel'>
                                     {image.map((image, index) => {
                                         return(
-                                            <i className={index === this.state.currentImage ? 'fas fa-circle active-icon' : 'far fa-circle'}></i>
+                                            <i className={index === this.state.currentImage ? 'fas fa-circle active-icon' : 'fas fa-circle inactive-icon'}></i>
                                         )
                                     })}
                                 </div>
