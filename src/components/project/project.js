@@ -6,12 +6,7 @@ import './style.css';
 const images = require.context('../../../public/images', true);
 
 class Project extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            currentImage: 0
-        }
-    }
+    state={currentImage: 0}
 
     nextImage = () => {
         let nextImage = this.state.currentImage + 1;
