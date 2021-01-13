@@ -8,8 +8,25 @@ const images = require.context('../../../public/images', true);
 class Project extends Component {
     //need to reorganize class so that project details are set into state when component mounts, so that the logic is not run every time the component rerenders
 
+    state={
+        currentImage: 0,
+        chrome: true
+    }
 
-    state={currentImage: 0}
+    componentDidMount() {
+        //let chromeAgent = userAgentString.indexOf("Chrome") > -1;
+        console.log(navigator.userAgent);
+        let chromeAgent = navigator.userAgent.indexOf('Chrome') > -1;
+        let safariAgent = navigator.userAgent.indexOf('Safari') > -1;
+
+        if(!chromeAgent) {
+            this.setState({
+                chrome: false
+            })
+        }
+        console.log(safariAgent);
+    }
+
 
     nextImage = () => {
         let nextImage = this.state.currentImage + 1;
@@ -26,11 +43,12 @@ class Project extends Component {
     }
 
     render() {
+        let src;
         console.log('rendering');
         const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
-        // let src = this.props.newProject ? images(`./${image[0]}.png`) : images(`./${image[this.state.currentImage]}.png`);
-        let src = images(`./${image[this.state.currentImage]}.webp`);
+        this.state.chrome ? src = images(`./${image[this.state.currentImage]}.webp`) : src = images(`./${image[this.state.currentImage]}.png`)
+        
 
         return(
             <div className='container'>
