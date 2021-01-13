@@ -44,16 +44,18 @@ class Project extends Component {
 
     render() {
         let src;
-        console.log('rendering');
+
         const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
         this.state.chrome ? src = images(`./${image[this.state.currentImage]}.webp`) : src = images(`./${image[this.state.currentImage]}.png`)
         
-
         return(
             <div className='container'>
                 <div className='justify-content-center row title bg-secondary'>
                     <h3>{name}</h3>
+                </div>
+                <div className='justify-content-center row link'>
+                    <a href={url} target='blank' id='link'>{url}</a>
                 </div>
                 <div className='row'>
                     <div className='col'>
@@ -61,7 +63,7 @@ class Project extends Component {
                             <div className='col-lg-1 my-auto'>
                                 <button id='next' onClick={this.prevImage}><i className="fas fa-chevron-left"></i></button>
                             </div>
-                            <div className='col-lg-10'>
+                            <div className='col-lg-10 images'>
                                 <img src={src} alt={name} style={{width: imageWidth}} className='mx-auto'></img>
                                 <div className='carousel'>
                                     {image.map((image, index) => {
@@ -81,10 +83,10 @@ class Project extends Component {
                 <div className='row description'>
                     {description}
                 </div>
-                <div className='link'>
+                {/* <div className='link'> */}
                     {/* <Link to={url}>{url}</Link> */}
-                    <a href={url} target='blank'>{url}</a>
-                </div>
+                    {/* <a href={url} target='blank'>{url}</a> */}
+                {/* </div> */}
             </div>
         )
     }
