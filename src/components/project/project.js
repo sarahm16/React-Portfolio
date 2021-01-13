@@ -30,7 +30,7 @@ class Project extends Component {
         const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
         // let src = this.props.newProject ? images(`./${image[0]}.png`) : images(`./${image[this.state.currentImage]}.png`);
-        let src = images(`./${image[this.state.currentImage]}.png`);
+        let src = images(`./${image[this.state.currentImage]}.webp`);
 
         return(
             <div className='container'>
