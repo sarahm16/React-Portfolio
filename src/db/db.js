@@ -1,7 +1,7 @@
 let projectList = [
     {
         name: 'Fair Weather Hiking',
-        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, upload photos and trip report, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days.',
+        description: 'An app designed for hikers to search for hikes based on mileage, distance to trailhead, and elevation gain. Users can save hikes into their favorites, mark complete, upload photos and trip report, and track their month by month stats for elevation gain and distance hiked. Each hike result gives the weather report for the next 5 days. Post graduation, I taught myself and implemented Redux. I also restructured and further modularized the application. I added compression and code splitting, which raised the Lighthouse score from 35 to 88. Additionally, I added a feature that allows users to upload their own photos to a trip report using Cloudinary.',
         technologies: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'Express.js', 'Moment.js', 'Zipcodes.js', 'Materialize CSS', 'Cloudinary.js', 'Chart.js'],
         url: 'https://fairweatherhiking.herokuapp.com',
         image: ['fairweather', 'fairweather3', 'fairweather4', 'fairweather5', 'fairweather6'],

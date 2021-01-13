@@ -6,6 +6,9 @@ import './style.css';
 const images = require.context('../../../public/images', true);
 
 class Project extends Component {
+    //need to reorganize class so that project details are set into state when component mounts, so that the logic is not run every time the component rerenders
+
+
     state={currentImage: 0}
 
     nextImage = () => {
@@ -23,6 +26,7 @@ class Project extends Component {
     }
 
     render() {
+        console.log('rendering');
         const { name, description, technologies, url, image, imageWidth } = this.props.details;
 
         // let src = this.props.newProject ? images(`./${image[0]}.png`) : images(`./${image[this.state.currentImage]}.png`);
