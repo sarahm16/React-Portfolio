@@ -83,12 +83,15 @@ class Contact extends Component {
                                     <button type='submit' id='submit'><i className="far fa-paper-plane"></i></button>
                                 </div>
                             </div>
-                            {this.state.isSubmitted && <div className="alert alert-success" id='success-alert' role="alert">
+                            
+                            {this.state.status === 'SUCCESS' && <div className='status' id='success'>
                                 Thank you! I will return your email shortly
                             </div>}
-                            {/* <div className="alert alert-success" id='success-alert' role="alert">
-                                Thank you! I will contact you shortly
-                            </div> */}
+
+                            {this.state.status === 'ERROR' && <div className='error'>
+                                Oops, something went wrong!
+                            </div>}
+
                         </form>
 
 

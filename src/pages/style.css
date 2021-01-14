@@ -53,10 +53,13 @@ form {
 }
 
 #message {
-    width: 75%;
+    width: 76%;
     margin-top: 10px;
     padding: 5px;
     height: 300px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
 }
 
 #submit {
@@ -72,8 +75,22 @@ form {
     background-color: gray;
 }
 
-#success-alert {
-    margin: 10px 20px 10px 20px
+#success {
+    background-color: rgba(48, 184, 48, 0.61);
+}
+
+#error {
+    background-color: rgba(253, 0, 0, 0.61);
+}
+
+
+.status {
+    width: 76%;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
 }
 
 .contact-header {
@@ -119,4 +136,5 @@ form {
 
 button {
     border: none;
+    margin-bottom: 10px;
 }
