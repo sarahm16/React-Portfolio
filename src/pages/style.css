@@ -125,7 +125,9 @@ form {
 
 .project-container {
     background-color: white;
+    width: 90%;
     border-left: 20px solid rgba(255, 206, 214, 0.774);
+    border-right: 30px solid rgba(255, 206, 214, 0.774);
     padding-left: 0px;
     padding-right: 0px;
 }

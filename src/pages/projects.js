@@ -45,9 +45,9 @@ class Projects extends Component {
             <div>
                 <Navbar page='projects' />
                 <div className='bg'></div>
-                <div className='container projects'>
+                <div className='projects'>
                     <div className='row justify-content-between'>
-                        <div className='col-lg-4 project-list bg-light'>
+                        <div className='col-lg-3 project-list bg-light'>
                             <div className='row project-header bg-secondary'>
                                 <h4>Projects</h4>
                             </div>
@@ -59,7 +59,7 @@ class Projects extends Component {
                                 )
                             })}
                         </div>
-                        <div className='col-lg-8 project-container'>
+                        <div className='col-lg-9 project-container'>
                             <Project details={this.state.activeProject} key={this.state.projectKey} />
                         </div>
                     </div>
