@@ -44,21 +44,24 @@ class Contact extends Component {
                             <div className='col-lg-7 my-email'><i className='far fa-envelope' /> sarahmarie.carter@yahoo.com</div>
                             <div className='col-lg-5 my-phone'><i className="fas fa-phone" /> (253) 245-8544</div>
                         </div>
+
+
+
                         <form action='mailto:sarahmarie.carter@yahoo.com' onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">
-                                    <input type="text" id='name' className="form-control" placeholder="Name" onChange={this.onChange} required />
+                                    <input type="text" name='Name' id='name' className="form-control" placeholder="Name" onChange={this.onChange} required />
                                 </div>
                                 <div className="col">
-                                    <input type="text" id='phone' className="form-control" placeholder="Phone" onChange={this.onChange} required />
+                                    <input type="text" name='Phone' id='phone' className="form-control" placeholder="Phone" onChange={this.onChange} required />
                                 </div>
                             </div>
                             <div className='row user-contact'>
                                 <div className='col'>
-                                    <input type='email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} required />
+                                    <input type='email' name='Email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} required />
                                 </div>
                             </div>
-                            <textarea id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
+                            <textarea name='Message' id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
                             <div className='row user-contact'>
                                 <div className='col-lg-10'></div>
                                 <div className='col-lg-2'>
@@ -72,6 +75,10 @@ class Contact extends Component {
                                 Thank you! I will contact you shortly
                             </div> */}
                         </form>
+
+
+
+
                         
                     </div>
                 </div>
