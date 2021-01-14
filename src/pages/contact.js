@@ -24,8 +24,23 @@ class Contact extends Component {
     onSubmit = (event) => {
         event.preventDefault();
         this.setState({isSubmitted: true});
-        console.log(this.state);
-        console.log('submitted form')
+        // console.log(this.state);
+        // console.log('submitted form')
+        const form = event.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+            form.reset();
+            this.setState({ status: "SUCCESS" });
+        } else {
+            this.setState({ status: "ERROR" });
+        }
+        };
+        xhr.send(data);
     }
 
     render() {
@@ -47,7 +62,7 @@ class Contact extends Component {
 
 
 
-                        <form action='mailto:sarahmarie.carter@yahoo.com' onSubmit={this.onSubmit}>
+                        <form  action="https://formspree.io/f/xpzoknob" method="POST" onSubmit={this.onSubmit}>
                             <div className="row user-contact">
                                 <div className="col">
                                     <input type="text" name='Name' id='name' className="form-control" placeholder="Name" onChange={this.onChange} required />
@@ -58,7 +73,7 @@ class Contact extends Component {
                             </div>
                             <div className='row user-contact'>
                                 <div className='col'>
-                                    <input type='email' name='Email' id='email' className='form-control' placeholder='Email' onChange={this.onChange} required />
+                                    <input type='email' name='_replyto' id='email' className='form-control' placeholder='Email' onChange={this.onChange} required />
                                 </div>
                             </div>
                             <textarea name='Message' id='message' placeholder='Send me an email!' value={this.state.message} onChange={this.onChange} />
