@@ -18,6 +18,11 @@
     box-shadow: 0px 0px 10px rgb(190, 190, 190);
 } */
 
+textarea {
+    border-radius: 5px;
+    border-color: rgb(128, 128, 128, .5);
+}
+
 form {
     margin: 15px 0px 10px 0px;
     width: 100%;
@@ -60,6 +65,11 @@ form {
     background-color: rgb(255, 134, 154);
     color: white;
     border-radius: 3px;
+    transition: 0.3s ease background-color;
+}
+
+#submit:hover {
+    background-color: gray;
 }
 
 #success-alert {
